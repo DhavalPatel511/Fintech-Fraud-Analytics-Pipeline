@@ -33,7 +33,7 @@ Amazon Athena — SQL analytics
 Business insights
 ```
  
-![Architecture Diagram](architecture/pipeline_diagram.png)
+![Architecture Diagram](architecture/pipeline_architecture.png)
  
 ---
  
@@ -177,21 +177,21 @@ to_timestamp(date, 'yyyy-MM-dd HH:mm:ss') AS transaction_date
  
 | Category | Fraud Rate % |
 |---|---|
-| [fill in] | [fill in] |
+| Cruise Lines | 38.55 |
  
 **Average transaction amount — fraud vs legitimate:**
  
 | Fraud Label | Avg Amount |
 |---|---|
-| fraud | [fill in] |
-| legitimate | [fill in] |
-| unknown | [fill in] |
+| fraud | 110.23 |
+| legitimate | 42.85 |
+| unknown | 43.03 |
  
 **Fraud rate by age range:**
  
 | Age Range | Fraud Rate % |
 |---|---|
-| [fill in] | [fill in] |
+| Older Borrowers | 0.11 |
  
 ---
  
@@ -211,15 +211,7 @@ fraud-analytics-pipeline/
   glue_scripts/
     fraud_etl_pipeline.py       ← main ETL job
   athena_queries/
-    fraud_rate_by_category.sql
-    avg_amount_by_fraud_label.sql
-    fraud_by_age_range.sql
-    fraud_by_state.sql
-    chip_card_fraud_rate.sql
-    online_vs_inperson_fraud.sql
-    fraud_by_hour.sql
-    fraud_by_credit_range.sql
-    fraud_by_num_cards.sql
+    fraud_analysis.sql
   architecture/
     pipeline_diagram.png
   README.md
