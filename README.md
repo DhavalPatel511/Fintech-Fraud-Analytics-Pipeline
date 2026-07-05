@@ -36,7 +36,7 @@ Business insights
 ![Architecture Diagram](architecture/pipeline_architecture.png)
  
 ---
- 
+
 ## Dataset
  
 **Source**: [Transactions Fraud Dataset — Kaggle](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets)
